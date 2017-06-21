@@ -36,17 +36,16 @@ function logIn() {
     if (userData[i].name === userNameEl.value) {
       if (userData[i].password === passWordEl.value) {
         alert("Dear "+userNameEl.value+",your journey just begin!");
-        enableNavBar();
       } else {
         alert("wrong password");
         return;
-      } else {
+      } }else {
         alert("no username found");
         return;
       }
-    }
   }
-  resetInput();
+  document.querySelector('#logInForm').innerHTML='<h2 class="text-center">Please go to Color Wheel</h2>';
+  enableNavBar();
 }
 
 function validateTask(task) {
