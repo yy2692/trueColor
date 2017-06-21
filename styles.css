@@ -1,0 +1,30 @@
+.thumbnail{
+  position: relative;
+}
+.caption{
+  position: absolute;
+    top: 30%;
+    left: 0;
+    width: 100%;
+}
+h1{
+  font-size: 100px;
+}
+.nav{
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+h1, h2,h3{
+font-family: "Rock Salt";
+  color: yellow;
+}
+.nav-pills{
+  color:yellow;
+}
+.panel-default{
+  opacity:0.7;
+}
+.text-black{
+  color:black;
+}
