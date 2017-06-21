@@ -45,7 +45,7 @@ function logIn() {
         return;
       }
   }
-  document.querySelector('#logInForm').innerHTML='<h2 class="text-center">Please go to Color Wheel</h2>';
+  document.querySelector('#logInForm').innerHTML='<h2 class="text-center">Welcome!</h2>';
   enableNavBar();
 }
 
@@ -78,5 +78,8 @@ function getTimeStamp() {
   return Date.now(); // this returns a timestamp in milliseconds since 1970.
 }
 //colorwheel page
-
+function updateHomePage(){
+  document.querySelector('#logInForm').innerHTML='<h2 class="text-center">Welcome!</h2>';
+  enableNavBar();
+}
 //colorcontext page
