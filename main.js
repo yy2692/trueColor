@@ -46,6 +46,7 @@ function logIn() {
       }
     }
   }
+  resetInput();
 }
 
 function validateTask(task) {
