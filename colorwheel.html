@@ -17,30 +17,80 @@
   </div>
 <ul class="nav nav-pills nav-stacked">
   <br>
-  <li role="presentation" ><a href="index.html">Home</a></li>
+  <li role="presentation" class="disabled" ><a href="#">Get Started</a></li>
   <br>
-  <li role="presentation"class="active"><a href="#">Color Wheel</a></li>
+  <li role="presentation" class="dropdown active">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="colorwheel.html" role="button" aria-haspopup="true" aria-expanded="false">Color Wheel <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="colorwheel.html">Primary Color</a></li>
+          <li><a href="colorwheel.html">Complementary Color</a></li>
+        </ul>
+      </li>
   <br>
   <li role="presentation"><a href="colorcontext.html">Color Context</a></li>
 </ul>
   </div>
-<!--primary color-->
+<!--intro-->
 <div class="container-fluid">
 <div class="row">
   <div class="col-md-4 col-sm-6">
     <img src="http://www.blog.krysiak.pl/wp-content/uploads/Koło-barw-300x300.png" alt="colorwheel">
   </div>
-  <div class="col-md-8 col-md-6">
-   <p>The color wheel or color circle is the basic tool for combining colors. The first circular color diagram was designed by Sir Isaac Newton in 1666.
-
-The color wheel is designed so that virtually any colors you pick from it will look good together. Over the years, many variations of the basic design have been made, but the most common version is a wheel of 12 colors based on the RYB (or artistic) color model.</p>
+  <div class="col-md-8 col-md-6 text-center">
+   <p>A color wheel, based on red, yellow and blue, is the basic tool for combining colors. The first circular color diagram was designed by Sir Isaac Newton in 1666.
+     <br>
+  Since then, scientists and artists have studied and designed numerous variations of this concept. Differences of opinion about the validity of one format over another continue to provoke debate. In reality, any color circle or color wheel which presents a logically arranged sequence of pure hues has merit.
+ </p>
   </div>
 </div>
-<!--test-->
+<!--primary color-->
+<div class="panel panel-danger">
+  <div class="panel-heading">
+    <h3 class="text-black">Primary, Secondary and Tertiary Colors</h3>
+  </div>
+  <div class="panel-body row">
+    <!--need interaction-->
+    <img src="http://operationwritehome.org/wp-content/uploads/2013/01/primarysecondary-tertiary.jpg" alt="primarycolor" width=100%>
+    <div class="col-md-4">
+      <p>
+  <strong>Primary Colors</strong>: Red, yellow and blue.
+  In traditional color theory (used in paint and pigments), primary colors are the 3 pigment colors that cannot be mixed or formed by any combination of other colors. All other colors are derived from these 3 hues.</p>
+    </div>
+    <div class="col-md-4">
+      <p>
+    <strong>Secondary Colors</strong>: Green, orange and purple.
+    These are the colors formed by mixing the primary colors.</p>
+    </div>
+    <div class="col-md-4">
+      <p><strong>Tertiary Colors</strong>: Yellow-orange, red-orange, red-purple, blue-purple, blue-green and yellow-green.These are the colors formed by mixing a primary and a secondary color.
+      </p>
+    </div>
+  </div>
+</div>
+<!--complementary color-->
+<div class="panel panel-warning">
+  <div class="panel-heading">
+    <h3 class="text-black">Complementary Colors</h3>
+  </div>
+  <div class="panel-body">
+  </div>
+</div>
+<!--quiz-->
+<div class="panel panel-info">
+  <div class="panel-heading">
+    <h3 class="text-black">Quiz for this part</h3>
+  </div>
+<div class="panel-body">
 
-<!--complimentary color-->
+</div>
+
+
+</div>
 
 </div>
   <script src="main.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
   </body>
 </html>

@@ -11,6 +11,7 @@ h1{
   font-size: 100px;
 }
 .nav{
+
   position: absolute;
   left: 10px;
   top: 10px;
@@ -20,9 +21,9 @@ font-family: "Rock Salt";
   color: yellow;
 }
 
-.panel-default{
-  opacity:0.7;
-}
 .text-black{
   color:black;
+}
+p{
+  font-size:20px;
 }
