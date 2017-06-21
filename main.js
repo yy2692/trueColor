@@ -48,10 +48,6 @@ function logIn() {
   }
 }
 
-function logInYes() {
-  console.log(yes);
-}
-
 function validateTask(task) {
   if (task !== "") {
     return true;
