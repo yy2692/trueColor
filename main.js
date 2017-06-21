@@ -32,6 +32,7 @@ function logIn() {
     alert("Please enter a valid password!");
     return;
   }
+  var i;
   for (i > 0; i < userData.length; i++) {
     if (userData[i].name === userNameEl.value) {
       if (userData[i].password === passWordEl.value) {
