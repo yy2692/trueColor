@@ -1,44 +1,86 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Handlee|Reenie+Beanie|Rock+Salt|Satisfy">
-    <link rel="stylesheet" href="styles.css">
-    <title>trueColor-color wheel</title>
-  </head>
-  <body>
-<!--header-->
-<div class="thumbnail text-center">
-  <img src="http://purcolour.com/wp-content/uploads/2016/01/banner-powder.jpg" alt="header" width="100%">
-  <div class="caption">
-    <br><br>
-    <h1>Color Context</h1>
-  </div>
-<ul class="nav nav-pills nav-stacked">
-  <br>
-  <li role="presentation" class="disabled"><a href="#">Get Started</a></li>
-  <br>
-  <li role="presentation" class="dropdown">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Handlee|Reenie+Beanie|Rock+Salt|Satisfy">
+  <link rel="stylesheet" href="styles.css">
+  <title>trueColor-color wheel</title>
+</head>
+
+<body>
+  <!--header-->
+  <div class="thumbnail text-center">
+    <img src="http://purcolour.com/wp-content/uploads/2016/01/banner-powder.jpg" alt="header" width="100%">
+    <div id="colorContextIntro" class="caption">
+      <br><br>
+      <h1>Color Context</h1>
+      <h3>Do you know that color behaves differently in relation to other colors and shapes? <br>In order to understand better, let's do a <button class="text-black" onclick="smallPractice()">small practice</button> here.</h3>
+    </div>
+      <!--nav bar-->
+    <ul class="nav nav-pills nav-stacked">
+      <br>
+      <li role="presentation"><a href="indexsuccess.html">Get Started</a></li>
+      <br>
+      <li role="presentation" class="dropdown">
         <a class="dropdown-toggle" data-toggle="dropdown" href="colorwheel.html" role="button" aria-haspopup="true" aria-expanded="false">Color Wheel <span class="caret"></span></a>
         <ul class="dropdown-menu">
-          <li><a href="colorwheel.html">Primary Color</a></li>
-          <li><a href="colorwheel.html">Complementary Color</a></li>
+          <li><a href="colorwheel.html">Color Wheel</a></li>
+          <li><a href="colorwheel.html#primary-color">Primary Color</a></li>
+          <li><a href="colorwheel.html#complementary-color">Complementary Color</a></li>
+          <li><a href="colorwheel.html#quiz">Quiz</a></li>
         </ul>
       </li>
-  <br>
-  <li role="presentation" class="active"><a href="#">Color Context</a></li>
-</ul>
-  </div>
-<!--intro-->
-<div class="container-fluid" >
+      <br>
+      <li role="presentation" class="active"><a href="#">Color Context</a></li>
+    </ul>
+    <!--color context tool-->
+      <div id="smallPractice" class="hidden captionNew">
+            <h3 id="paintSquares" class="hidden">First, let's <button onclick="paintSquare()" class="text-black">draw some squares!</button></h3>
+            <div id="squares" class="well row hidden" >
+              <div class="col-md-3 col-xs-6">
+                <div class="big-square">
+                  <div class="small-square">
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 col-xs-6">
+                <div class="big-square">
+                  <div class="small-square">
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 col-xs-6">
+                <div class="big-square">
+                  <div class="small-square">
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 col-xs-6">
+                <div class="big-square">
+                  <div class="small-square">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br>
+            <div id="paintRed" class="hidden">
+              <h3>Now, let's paint the inside small squares <button class="text-black" onclick="paintRed()">RED</button>. </h3>
+              <br>
+            </div>
+        <div id="paintBigSquares" class="hidden">
+        <h3>Great! Let's give the big squares some different colors! (drag and paint)</h3>
+        <div class="well">
 
+        </div>
+        </div>
+          </div>
+    </div>
 
-<!--color context tool-->
-
-</div>
   <script src="main.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  </body>
+</body>
+
 </html>
