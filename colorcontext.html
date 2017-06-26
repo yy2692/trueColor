@@ -10,7 +10,9 @@
 </head>
 
 <body>
+
   <!--header-->
+
   <div class="thumbnail text-center">
     <img src="http://purcolour.com/wp-content/uploads/2016/01/banner-powder.jpg" alt="header" width="100%">
     <div id="colorContextIntro" class="caption">
@@ -18,7 +20,9 @@
       <h1>Color Context</h1>
       <h3>Do you know that color behaves differently in relation to other colors and shapes? <br>In order to understand better, let's do a <button class="text-black" onclick="smallPractice()">small practice</button> here.</h3>
     </div>
-      <!--nav bar-->
+
+    <!--nav bar-->
+
     <ul class="nav nav-pills nav-stacked">
       <br>
       <li role="presentation"><a href="indexsuccess.html">Get Started</a></li>
@@ -35,48 +39,79 @@
       <br>
       <li role="presentation" class="active"><a href="#">Color Context</a></li>
     </ul>
-    <!--color context tool-->
-      <div id="smallPractice" class="hidden captionNew">
-            <h3 id="paintSquares" class="hidden">First, let's <button onclick="paintSquare()" class="text-black">draw some squares!</button></h3>
-            <div id="squares" class="well row hidden" >
-              <div class="col-md-3 col-xs-6">
-                <div class="big-square">
-                  <div class="small-square">
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3 col-xs-6">
-                <div class="big-square">
-                  <div class="small-square">
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3 col-xs-6">
-                <div class="big-square">
-                  <div class="small-square">
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3 col-xs-6">
-                <div class="big-square">
-                  <div class="small-square">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <br>
-            <div id="paintRed" class="hidden">
-              <h3>Now, let's paint the inside small squares <button class="text-black" onclick="paintRed()">RED</button>. </h3>
-              <br>
-            </div>
-        <div id="paintBigSquares" class="hidden">
-        <h3>Great! Let's give the big squares some different colors! (drag and paint)</h3>
-        <div class="well">
 
-        </div>
-        </div>
+    <!--color context tool-->
+
+    <div id="smallPractice" class="hidden captionNew">
+      <h3 id="paintSquares" class="hidden">First, let's <button onclick="paintSquare()" class="text-black">draw some squares!</button></h3>
+      <div id="squares" class="well row hidden">
+        <div class="col-md-3 col-xs-6">
+          <div class="big-square" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div class="small-square">
+            </div>
           </div>
+        </div>
+        <div class="col-md-3 col-xs-6">
+          <div class="big-square" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div class="small-square">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-xs-6">
+          <div class="big-square" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div class="small-square">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-xs-6">
+          <div class="big-square" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div class="small-square">
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div id="paintRed" class="hidden">
+        <h3>Now, let's paint the inside small squares <button class="text-black" onclick="paintRed()">RED</button>. </h3>
+        <br>
+      </div>
+      <div id="paintBigSquares" class="hidden">
+        <h3>Great! Let's give the big squares some different colors! (drag and paint)</h3>
+        <div class="well row">
+          <div class="col-md-2">
+            <div id="black-box" class="color-box black-box" draggable="true" ondragstart="drag(event)">
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div id="white-box" class="color-box white-box" draggable="true" ondragstart="drag(event)">
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div id="orange-box" class="color-box orange-box" draggable="true" ondragstart="drag(event)">
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div id="yellow-box" class="color-box yellow-box" draggable="true" ondragstart="drag(event)">
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div id="cyan-box" class="color-box cyan-box" draggable="true" ondragstart="drag(event)">
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div id="purple-box" class="color-box purple-box" draggable="true" ondragstart="drag(event)">
+            </div>
+          </div>
+        </div>
+        <h3>Have you notice the <button onclick="difference()" class="text-black">DIFFERENCE</button>?</h3>
+      </div>
+      <div id="difference" class="well hidden">
+        <p>Red appears more brilliant against a darer background (e.g. black) and somewhat duller against a brighter background (e.g. white). In contrast with orange, the red appears lifeless; in contrast with cyan, it exhibits brilliance. Notice that the
+          red square appears larger on black than on other background colors.</p>
+      </div>
     </div>
+  </div>
+  </div>
 
   <script src="main.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
